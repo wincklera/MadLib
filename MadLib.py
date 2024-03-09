@@ -1,29 +1,36 @@
-adjective = input("Enter a adjective: ")
-noun = input("Enter a noun: ")
-adjective1 = input("Enter a adjective: ")
-noun_place = input("Enter a noun thats a place: ")
-adjective2 = input("Enter a adjective: ")
-adjective3 = input("Enter a adjective: ")
-plural_noun_vehicle = input("Enter a plural noun thats a vehicle: ")
-adjective4 = input("Enter a adjective: ")
-adjective5 = input("Enter a adjective: ")
-plural_noun = input("Enter a plural noun: ")
-adjective6 = input("Enter a adjective: ")
-plural_noun1 = input("Enter a plural noun: ")
-plural_noun2 = input("Enter a plural noun: ")
-adjective7 = input("Enter a adjective: ")
-noun1 = input("Enter a noun: ")
-verb = input("Enter a verb: ")
-adjective8 = input("Enter a adjective: ")
-verb1 = input("Enter a verb: ")
-plural_noun1 = input("Entrer a plural noun: ")
-plural_noun_job = input("Enter a plural noun thats a job: ")
-adjective9 = input("Enter a adjective: ")
-verb2 = input("Enter a verb: ")
-adjective0 = input("Enter a adjective: ")
+prompts = [
+    "adjective",
+    "noun",
+    "adjective",
+    "noun that's a place",
+    "adjective",
+    "adjective",
+    "plural noun that's a vehicle",
+    "adjective",
+    "adjective",
+    "plural noun",
+    "adjective",
+    "plural noun",
+    "plural noun",
+    "adjective",
+    "noun",
+    "verb",
+    "adjective",
+    "verb",
+    "plural noun",
+    "plural noun that's a job",
+    "adjective",
+    "verb",
+    "adjective"
+]
 
-print("Star Wars is a " + adjective + " " + noun + " of " + adjective1 + " versus evil in a " + noun_place + " far far away. ")
-print("There are " + adjective2 + " battles between " + adjective3 +" " + plural_noun_vehicle + " in " + adjective4 + " space and " + adjective5 + " duels with " + plural_noun + " called " + adjective6 + " sabres. ")
-print("" + plural_noun + " called droids are helpers and " + plural_noun1 + " to the heroes. ")
-print("A " + adjective7 + " power called The " + noun1 + " " + verb + "s people to do " + adjective8 + " things, like " + verb1 + " " + plural_noun2 + ".")
-print(" The jedi " + plural_noun_job + " use The Force for the " + adjective9 + " side and the Sith " + verb2 + " it for the " + adjective0 + " side. ")
+words = []
+for prompt in prompts:
+    words.append(input("Enter a(n) " + prompt + ": "))
+
+print("Star Wars is a " + words[0] + " " + words[1] + " of " + words[2] + " versus evil in a " + words[3] + " far far away. ")
+print("There are " + words[4] + " battles between " + words[5] +" " + words[6] + " in " + words[7] + " space and " + words[8] + " duels with " + words[9] + " called " + words[10] + " sabres. ")
+print("" + words[11] + " called droids are helpers and " + words[12] + " to the heroes. ")
+print("A " + words[13] + " power called The " + words[14] + " " + words[15] + "s people to do " + words[16] + " things, like " + words[17] + " " + words[18] + ".")
+print(" The jedi " + words[19] + " use The Force for the " + words[20] + " side and the Sith " + words[21] + " it for the " + words[22] + " side. ")
+
